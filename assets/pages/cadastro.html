@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+    <link rel="stylesheet" href="../css/formulario.css" />
+</head>
+<body>
+    <div class="container">
+    <h1>Cadastra-se </h1>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="sobrenome">Sobrenome</label>
+        <input
+        type="text"
+        id="sobrenome"
+        name="sobrenome"
+        placeholder="Digite seu sobrenome"
+        />
+
+        <label for="rg">RG</label>
+        <input type="text" id="rg" name="rg" placeholder="00.000.000-0" />
+
+        <label for="email">E-Mail</label>
+        <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="exemplo@dominio.com"
+        required
+        inputmode="email"
+        />
+
+        <label for="senha">Senha</label>
+        <input
+        type="password"
+        id="senha"
+        name="senha"
+        placeholder="Cadastre sua senha"
+        minlength="8"
+        required
+        />
+        <label for="nascimento">Data de nascimento</label>
+        <!-- <input type="date" name="nascimento" id="nascimento" /> -->
+        <input
+        type="text"
+        name="nascimento"
+        id="nascimento"
+        pattern="\d{1,2}/\d{1,2}/\d{1,4}"
+        placeholder="00/00/0000"
+        inputmode="numeric"
+        />
+        <label for="estado-civil">Estado civil</label>
+        <select name="estado-civil" id="estado-civil">
+        <option value="" disabled>Selecione</option>
+        <option value="solteiro">Solteiro</option>
+        <option value="casado">Casado</option>
+        <option value="divorciado">Divorciado</option>
+        <option value="viuvo">Viúvo</option>
+        </select>
+        <div class="option-group">
+        <span>Documento</span>
+        <input type="radio" name="documento" id="cpf" />
+        <label for="cpf">CPF</label>
+
+        <input type="radio" name="documento" id="cnh" />
+        <label for="cnh">CNH</label>
+
+        <label for="documento-img">Insira o documento</label>
+        <input
+            type="file"
+            name="documento-img"
+            id="documento-img"
+            accept=".pdf,.jpg,.png"
+            size="30"
+        />
+        </div>
+        <div class="option-group">
+        <input type="checkbox" name="aceito" id="aceito" />
+        <label for="aceito">Li e aceito os termos de uso</label>
+        </div>
+        <div class="option-group">
+        <input type="checkbox" name="politica" id="politica" />
+        <label for="politica"
+            >Li e concordo com a politica de privacidade</label
+        >
+        </div>
+        <button type="submit">Salvar</button>
+    </form>
+    </div>
+
+    <div>
+        <a href="../index.html">Voltar para o site</a>
+    </div>
+    
+
+</body>
+</html>

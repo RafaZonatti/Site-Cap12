@@ -1,0 +1,78 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 16px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 200px;
+    padding: 12px;
+    font-size: 14px;
+    border: 0;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+}
+
+[type="submit"] {
+    width: 160px;
+    padding: 8px 12px;
+    border: 0;
+    color: whitesmoke;
+    border-radius: 6px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+label[for="nome"],
+label[for="sobrenome"],
+label[for="rg"],
+label[for="email"], 
+label[for="senha"],
+label[for="estado-civil"],
+label[for="documento-img"],
+label[for="nascimento"] {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.option-group{
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+input:invalid {
+    border-color: darkred;
+}
+
+input:valid {
+    border-color: darkgreen;
+}
+
+a {
+    
+        width: 160px;
+        padding: 8px 12px;
+        border: 0;
+        color: whitesmoke;
+        border-radius: 6px;
+        background-color: cornflowerblue; 
+}
+
+body {
+    
+    background-color: white
+ 
+}
